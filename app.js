@@ -19,7 +19,7 @@ function displayToDo(tasks){
     let toDisplay = ""
     tasks.forEach(element => {
         if(!element.done){
-            toDisplay += "<li> " + element.label + "</li>" + "<button type=\'submit\' class= \'confirm-button-icon\'onclick=\'taskDone(" + element.id + ")\'>Tâche accomplie</button>"
+            toDisplay += "<li> " + element.label + "</li>" + "<div class = \'button-container\'><button type=\'submit\' class= \'confirm-button-icon\'onclick=\'taskDone(" + element.id + ")\'>Tâche accomplie</button>" + "<button type=\'submit\' class= \'edit-button-icon\'onclick=\'editTask(" + element.id + ")\'>Modifier</button></div>"
         }
     });
 
@@ -41,7 +41,7 @@ function displayDone(tasks){
     let toDisplay = ""
     tasks.forEach(element => {
         if(element.done){
-            toDisplay += "<li> " + element.label + "</li>" + "<button type=\'submit\' class= \'delete-button-icon\'onclick=\'deleteTask(" + element.id + ")\'>Supprimer</button>"
+            toDisplay += "<li> " + element.label + "</li>" + "<button type=\'submit\' class= \'delete-button-icon\'onclick=\'deleteTask(" + element.id + ")\'>Supprimer</button>" 
         }
     });
 
@@ -57,4 +57,9 @@ function displayDone(tasks){
 function deleteTask(id){
     delete tasks[id]
     done.innerHTML = displayDone(tasks)
+}
+
+function editTask(id){
+    tasks[id].label = prompt("Modifiez la tâche "+ id+1, tasks[id].label)
+    content.innerHTML = displayToDo(tasks)
 }

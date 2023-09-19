@@ -60,6 +60,10 @@ main {
 #add-task-btn:hover {
     background-color: #0056b3;
 }
+.button-container {
+    text-align: center; /* Facultatif : pour centrer les boutons horizontalement */
+}
+
 
 ul {
     list-style: none;
@@ -77,6 +81,9 @@ li {
     border-radius: 5px;
 }
 
+span{
+    inline-size: auto;
+}
 li button {
     background-color: #dc3545;
     color: #fff;
@@ -99,9 +106,11 @@ li button:hover {
     padding: 0.25rem 0.5rem;
     cursor: pointer;
     font-size: 0.9rem;
-    border-radius: 5px;
+    border-radius: 2rem;
     display: flex;
     align-items: center; /* Centrer l'icône verticalement */
+    display: inline-block;
+    margin-right: 10px; /* Facultatif : pour ajouter un espacement entre les boutons */
 }
 
 .confirm-button-icon:hover {
@@ -113,21 +122,45 @@ li button:hover {
     margin-right: 0.25rem; /* Espace entre l'icône et le texte */
 }
 
-/* Style du bouton de confirmation pour une tâche réalisée avec une icône */
-.delete-button-icon{
-    background-color: #e42437; /* Couleur verte */
+/* Style du bouton d'édition pour une tâche réalisée avec une icône */
+.edit-button-icon {
+    background-color: #288ea7; /* Couleur bleue */
     color: #fff; /* Texte blanc */
     border: none;
     padding: 0.25rem 0.5rem;
     cursor: pointer;
     font-size: 0.9rem;
-    border-radius: 5px;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center; /* Centrer l'icône verticalement */
+    display: inline-block;
+    margin-right: 10px; /* Facultatif : pour ajouter un espacement entre les boutons */
+}
+
+.edit-button-icon:hover {
+    background-color: #214588; /* Couleur bleue plus foncée au survol */
+}
+
+/* Style de l'icône (utilise une police d'icônes ou un fichier SVG) */
+.edit-button-icon .icon {
+    margin-right: 0.25rem; /* Espace entre l'icône et le texte */
+}
+
+/* Style du bouton de suspression pour une tâche réalisée avec une icône */
+.delete-button-icon{
+    background-color: #e42437; /* Couleur rouge */
+    color: #fff; /* Texte blanc */
+    border: none;
+    padding: 0.25rem 0.5rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+    border-radius: 2rem;
     display: flex;
     align-items: center; /* Centrer l'icône verticalement */
 }
 
 .delete-button-icon:hover {
-    background-color: #920e1b; /* Couleur verte plus foncée au survol */
+    background-color: #920e1b; /* Couleur rouge plus foncée au survol */
 }
 
 /* Style de l'icône (utilise une police d'icônes ou un fichier SVG) */
