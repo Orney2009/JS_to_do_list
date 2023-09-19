@@ -1,0 +1,136 @@
+/* Réinitialisation des styles et styles de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+h3 {
+    margin-top: 2rem;
+}
+
+main {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: #f4f4f4;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.task-form {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+#task-input {
+    flex-grow: 1;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 2rem;
+    border-style: solid;
+}
+
+#add-task-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    margin-left: 0.4rem;
+    font-size: 1rem;
+    border-radius: 2rem;
+}
+
+#add-task-btn:hover {
+    background-color: #0056b3;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0.8rem;
+    border-radius: 5px;
+}
+
+li button {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 0.25rem 0.5rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+li button:hover {
+    background-color: #c82333;
+}
+
+
+/* Style du bouton de confirmation pour une tâche réalisée avec une icône */
+.confirm-button-icon {
+    background-color: #28a745; /* Couleur verte */
+    color: #fff; /* Texte blanc */
+    border: none;
+    padding: 0.25rem 0.5rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    display: flex;
+    align-items: center; /* Centrer l'icône verticalement */
+}
+
+.confirm-button-icon:hover {
+    background-color: #218838; /* Couleur verte plus foncée au survol */
+}
+
+/* Style de l'icône (utilise une police d'icônes ou un fichier SVG) */
+.confirm-button-icon .icon {
+    margin-right: 0.25rem; /* Espace entre l'icône et le texte */
+}
+
+/* Style du bouton de confirmation pour une tâche réalisée avec une icône */
+.delete-button-icon{
+    background-color: #e42437; /* Couleur verte */
+    color: #fff; /* Texte blanc */
+    border: none;
+    padding: 0.25rem 0.5rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    display: flex;
+    align-items: center; /* Centrer l'icône verticalement */
+}
+
+.delete-button-icon:hover {
+    background-color: #920e1b; /* Couleur verte plus foncée au survol */
+}
+
+/* Style de l'icône (utilise une police d'icônes ou un fichier SVG) */
+.delete-button-icon .icon {
+    margin-right: 0.25rem; /* Espace entre l'icône et le texte */
+}

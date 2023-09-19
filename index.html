@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ma Liste de Tâches</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Ma Liste de Tâches</h1>
+    </header>
+    <main>
+        <div class="task-form" name = "taskForm" >
+            <input type="text" id="task-input" placeholder="Ajouter une tâche" name = "task"/>
+            <button id="add-task-btn" onclick="addTask()">Ajouter</button>
+        </div>
+        <h3>Tâches à effectuer</h3>
+        <ul id="task-list">
+            <p>Aucune tâche à effectuer pour le moment</p>
+        </ul>
+        <h3>Tâches effectuées</h3>
+        <ul id="task-done-list">
+            <p>Aucune tâche effectuée pour le moment</p>
+        </ul>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
